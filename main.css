@@ -1,0 +1,111 @@
+:root{
+    --primary-color: #01B982;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #01B982;
+    font-family: 'lato' sans-serif;
+    background: url(images/forex-01.jpeg);
+    background-size: cover;
+    background-color: #074f57;
+    background-blend-mode: multiply;
+}
+
+h1 {
+    font-size: 3em;
+    font-style: italic;
+}
+p{
+    font-size: medium;
+    
+}
+
+small span {
+    font-weight: bold;
+    color: yellow;
+}
+
+#swap {
+    cursor: pointer;
+}
+
+.container {
+    margin-top: 20px;
+    
+
+}
+.currency {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.currency select {
+    color: white;
+    padding: 0.8em 1.6em 0.8em 0.8em;
+    cursor: pointer;
+    border: 1px solid #dedede;
+    border-radius: 0.5em;
+    font-size: 1em;
+    background: transparent;
+    background-image: ;
+}
+
+.currency input {
+    color: white;
+    margin-top: 2px;
+    border: 0;
+    background: transparent;
+    font-size: 2em;
+    text-align: right;
+}
+
+input:in-range {
+    border: 2px solid white;
+}
+
+input:out-of-range{
+    border: 2px solid white;
+}
+.class-rate-container{
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.rate{
+    color: #01B982;
+    font-size: 1em;
+    padding: 0 0.8em;
+}
+
+select:focus,
+input:focus,
+button:focus {
+    outline: 0;
+}
+
+@media (max-width: 640px) {
+    body{
+        width: 100%;
+    }
+    .rate{
+        font-size: 0.85em;
+    }
+    .currency select {
+        padding: 0.8em 1.4em;
+    }
+    .currency input {
+        width: 9em;
+        font-size: 1.2em;
+    }
+}
